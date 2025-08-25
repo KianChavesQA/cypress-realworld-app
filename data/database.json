@@ -74,6 +74,17 @@
       "balance": 49474,
       "createdAt": "2023-12-07T04:39:38.383Z",
       "modifiedAt": "2024-03-07T00:07:36.510Z"
+    },
+    {
+      "id": "-6pm-PyOx",
+      "uuid": "88de7e1a-eff6-4fdf-bac4-7c634bca90f0",
+      "firstName": "Positividade",
+      "lastName": "Kaizen",
+      "username": "admin@socialmediamanager.com",
+      "password": "$2a$10$iepKv2X/fdbIKC8stNyQZeCqVLd9JKS8PtzI36bE7Xxxwtzxc221y",
+      "balance": 0,
+      "createdAt": "2025-08-25T13:13:08.183Z",
+      "modifiedAt": "2025-08-25T13:13:08.183Z"
     }
   ],
   "contacts": [
@@ -253,6 +264,17 @@
       "isDeleted": false,
       "createdAt": "2024-01-26T14:01:01.815Z",
       "modifiedAt": "2024-03-07T08:44:31.174Z"
+    },
+    {
+      "id": "K5Gpt2L0i",
+      "uuid": "94ec9c58-422e-4174-8398-8fda1599553b",
+      "userId": "-6pm-PyOx",
+      "bankName": "asasdas",
+      "accountNumber": "12121212121",
+      "routingNumber": "231322156",
+      "isDeleted": false,
+      "createdAt": "2025-08-25T13:14:12.650Z",
+      "modifiedAt": "2025-08-25T13:14:12.650Z"
     }
   ],
   "transactions": [

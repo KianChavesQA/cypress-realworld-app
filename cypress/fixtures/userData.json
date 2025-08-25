@@ -1,0 +1,10 @@
+{
+    "userSuccess": {
+      "username": "admin@socialmediamanager.com",
+      "password": "2906chaves"
+    },
+    "userFail": {
+      "username": "errorUser@gpeto.com",
+      "password": "errorPass"
+    }
+}
