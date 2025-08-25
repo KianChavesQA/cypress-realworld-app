@@ -1,7 +1,7 @@
 {
     "userSuccess": {
-      "username": "admin@socialmediamanager.com",
-      "password": "2906chaves"
+      "username": "joedoe",
+      "password": "superUser#"
     },
     "userFail": {
       "username": "errorUser@gpeto.com",
