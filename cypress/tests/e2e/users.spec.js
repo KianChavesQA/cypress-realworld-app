@@ -49,7 +49,7 @@ describe("Login com falha", () => {
 });
 
 // Inicia o bloco de testes para registro de usuário
-describe("Registro de usuário", () => {
+describe("Registro de novo usuário", () => {
   // Testa se é possível registrar um novo usuário com sucesso
   it("Deve registrar um novo usuário com sucesso", () => {
     // Clica no botão de cadastro
@@ -65,6 +65,8 @@ describe("Registro de usuário", () => {
       userData.userSuccess.password
     );
     signUpPage.submit();
+    // Verifica se aparece a mensagem de sucesso
+    signUpPage.checkSignupSuccess();
     // Verifica se está de volta na URL de login
     cy.wait(2000); // espera 2 segundos
     loginPage.checkLoginUrl();
@@ -83,5 +85,21 @@ describe("Registro com informaações incompletas", () => {
     signUpPage.submit();
     // Verifica se aparece a mensagem de alerta de campo obrigatório
     signUpPage.checkAlertMessage("First name is required");
+  });
+});
+
+// Inicia o bloco de testes para registro do usuário sucesso
+describe("Registro do usuário sucesso", () => {
+  it.skip("Deve registrar o usuário Sucesso", () => {
+    loginPage.clickSignup();
+    signUpPage.checkSignupUrl();
+    signUpPage.createAccount(
+      Joe,
+      Doe,
+      userData .userSuccess.username,
+      userData.userSuccess.password,
+      userData.userSuccess.password
+    );
+    signUpPage.submit();
   });
 });

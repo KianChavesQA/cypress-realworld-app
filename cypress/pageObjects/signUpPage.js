@@ -33,5 +33,10 @@ class SignupPage {
   checkAlertMessage(message) {
     cy.get(this.selectorsList().firstNameHelper).should("be.visible");
   }
+  checkSignupSuccess() {
+    cy.get(this.selectorsList().alertMessage)
+      .should("be.visible")
+      .and("contain", "You have successfully registered");
+  }
 }
 export default new SignupPage();
