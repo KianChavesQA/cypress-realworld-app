@@ -90,13 +90,13 @@ describe("Registro com informaações incompletas", () => {
 
 // Inicia o bloco de testes para registro do usuário sucesso
 describe("Registro do usuário sucesso", () => {
-  it.skip("Deve registrar o usuário Sucesso", () => {
+  it.only("Deve registrar o usuário Sucesso", () => {
     loginPage.clickSignup();
     signUpPage.checkSignupUrl();
     signUpPage.createAccount(
-      Joe,
-      Doe,
-      userData .userSuccess.username,
+      "Joe",
+      "Doe",
+      userData.userSuccess.username,
       userData.userSuccess.password,
       userData.userSuccess.password
     );
